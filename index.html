@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body onload="showSection('main')">
+  <div class="sidebar">
+    <ul>
+      <li onclick="showSection('main')"><i class="fas fa-file-alt"></i><span>Main</span></li>
+      <li onclick="showSection('cv')"><i class="fas fa-file-alt"></i><span>My CV</span></li>
+      <li onclick="showSection('about')"><i class="fas fa-user"></i><span>About Me</span></li>
+      <li onclick="showSection('projects')"><i class="fas fa-code"></i><span>My Projects</span></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <section id="main">
+      <h1>Greetings!</h1>
+      <p>Thank you for visiting this website! <br>Here you can find a lot of interesting information about the developer!</p>
+    </section>
+
+    <section id="cv" class="cv-section">
+  <div class="cv-header">
+    <div class="cv-name">
+      <h1>Dmytro Horodnychyi</h1>
+    </div>
+    <div class="cv-photo">
+      <img src="photo_2025-06-03_18-07-47.jpg" alt="Profile photo of Dmytro Horodnychyi">
+    </div>
+  </div>
+
+  <h2>Contact Information</h2>
+  <p><strong>Email:</strong> <a href="mailto:dih19@aber.ac.uk">dih19@aber.ac.uk</a></p>
+  <p><strong>Github:</strong> <a href="https://github.com/dmytrohorodnychyi">dimahoro</a></p>
+  
+  <h2>Professional Summary</h2>
+  <p>
+    Highly motivated and adaptable Software Engineering undergraduate student with a strong foundation in programming, computational theory and information security. 
+    Proven ability to thrive in fast-paced, collaborative environments through diverse roles in interpretation, social work, and youth advocacy. 
+    Skilled in cross-cultural communication, with experience supporting refugee communities and organising public events. 
+    Have technical basic skills in Python, Java and C, with hands-on experience using LaTeX and Linux. 
+    A passionate communicator and creative thinker, combining analytical mindset with musical talent and leadership potential.
+  </p>
+
+  <h2>Education</h2>
+<div class="cv-block">
+
+  <div class="education-entry">
+    <div class="education-header">
+      <span><strong>Aberystwyth University</strong> – BEng, Software Engineering</span>
+      <span class="education-date">Sept 2024 – May 2028</span>
+    </div>
+    <ul>
+      <li>Predicted grade: 1st Class</li>
+      <li><strong>Coursework:</strong> Programming, Computational Theory, Information Security, Computer Infrastructure</li>
+    </ul>
+  </div>
+
+  <div class="education-entry">
+    <div class="education-header">
+      <span><strong>Birmingham Royal Conservatoire</strong> – ATCL, Music Performance</span>
+      <span class="education-date">Nov 2022 – Aug 2024</span>
+    </div>
+    <ul>
+      <li>Grade: High Pass</li>
+      <li><strong>Diploma:</strong> Level 4 in Music Performance</li>
+    </ul>
+  </div>
+
+  <div class="education-entry">
+    <div class="education-header">
+      <span><strong>The De Montfort School</strong> – A-levels</span>
+      <span class="education-date">Sept 2022 – June 2024</span>
+    </div>
+    <ul>
+      <li><strong>Grades:</strong> Music – A, Maths – B, English – C</li>
+    </ul>
+  </div>
+
+</div>
+
+
+  <h2>Experience</h2>
+<div class="cv-block">
+
+  <div class="experience-entry">
+    <div class="experience-header">
+      <span><strong>WORD360</strong> – Interpreter</span>
+      <span class="experience-date">Apr 2025 – Present | England, UK</span>
+    </div>
+    <ul>
+      <li>Providing a confidential and anonymous interpreting service</li>
+      <li>Mastered the ability to deal with emergency situations</li>
+      <li>Further improved my soft skills</li>
+    </ul>
+  </div>
+
+  <div class="experience-entry">
+    <div class="experience-header">
+      <span><strong>Buttle UK</strong> – Youth Advisory Panel Representative</span>
+      <span class="experience-date">Jul 2024 – Present | England, UK</span>
+    </div>
+    <ul>
+      <li>Coordinated teamwork, improved advertising, gained soft skills</li>
+    </ul>
+  </div>
+
+  <div class="experience-entry">
+    <div class="experience-header">
+      <span><strong>Evesham Vale Welcome Refugees</strong> – Volunteer</span>
+      <span class="experience-date">Apr 2024 – Present | England, UK</span>
+    </div>
+    <ul>
+      <li>Organised a fundraising concert with local musicians</li>
+    </ul>
+  </div>
+
+  <div class="experience-entry">
+    <div class="experience-header">
+      <span><strong>NieCodzienna Restaurant</strong> – Chef Assistant / Grill Chef</span>
+      <span class="experience-date">Jun 2022 – Sep 2022 | Warsaw, Poland</span>
+    </div>
+    <ul>
+      <li>Improved grill menu, boosted customer flow</li>
+      <li>Managed bar register, worked under pressure</li>
+    </ul>
+  </div>
+
+  <div class="experience-entry">
+    <div class="experience-header">
+      <span><strong>Star of Hope</strong> – Social Worker</span>
+      <span class="experience-date">Apr 2022 – May 2022 | Karrjo, Sweden</span>
+    </div>
+    <ul>
+      <li>Organised concerts for Ukrainian refugees</li>
+      <li>Acted as interpreter between refugees and authorities</li>
+    </ul>
+  </div>
+
+</div>
+
+
+  <h2>Additional Skills</h2>
+  <ul>
+    <li><strong>IT Skills:</strong> MS Office, LaTeX, Linux OS, Windows OS, Python, Java, C</li>
+    <li><strong>Creative Skills:</strong> Music Performance (Piano)</li>
+  </ul>
+</section>
+
+
+    <section id="about">
+  <h1>About Me</h1>
+
+  <div class="about-menu">
+    <ul>
+      <li onclick="showAbout('uni', this)">My life at Uni</li>
+      <li onclick="showAbout('music', this)">My musical career</li>
+    </ul>
+  </div>
+
+  <div class="about-content">
+    <div id="about-uni" class="about-section">
+      <p>📝 Здесь вы можете рассказать, как проходит ваша студенческая жизнь: учёба, друзья, проекты, клубы и т.д.</p>
+    </div>
+    <div id="about-music" class="about-section">
+      <p>🎵 Здесь вы можете описать свой путь в музыке: образование, выступления, достижения, планы.</p>
+    </div>
+  </div>
+</section>
+
+
+    <section id="projects">
+  <h1>My projects</h1>
+      <div class="about-menu">
+        <ul>
+          <li onclick="showAbout('ongoing', this)">Ongoing projects</li>
+          <li onclick="showAbout('completed', this)">Completed projects</li>
+        </ul>
+      </div>
+
+      <div class="projects-content">
+        <div id="about-ongoing" class="about-section">
+            <p>Here I will talk about ongoing projects.</p>
+        </div>
+        <div id="about-completed" class="about-section">
+            <p>Here I will talk about completed projects.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
