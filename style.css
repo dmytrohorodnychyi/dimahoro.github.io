@@ -153,8 +153,11 @@ p {
   }
 
   .cv-photo img {
-    width: 100px;
-    height: 100px;
+    width: 20vw;
+    max-width: 120px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid rgba(0, 79, 144, 0.3);
   }
 }
 
@@ -229,10 +232,10 @@ p {
   }
 
   h1 {
-    font-size: 1.5em;
+    font-size: clamp(1.5rem, 4vw, 2em);
   }
 
   p {
-    font-size: 1em;
+    font-size: clamp(1rem, 3vw, 1.1em);
   }
 }
