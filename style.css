@@ -262,25 +262,31 @@ p {
   .sidebar-footer {
     width: 100%;
     overflow-x: auto;
+    overflow-y: hidden;
     white-space: nowrap;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 10px;
+    display: block;
+    padding: 10px;
     background-color: #1e1e2f;
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+  }
+
+  .sidebar-footer::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in WebKit browsers */
   }
 
   .sidebar-footer .webring {
-    display: flex;
+    display: inline-flex;
+    gap: 12px;
     align-items: center;
-    gap: 8px;
   }
 
   .sidebar-footer .webring a {
-    font-size: 0.9em;
-    color: #aaa;
-    padding: 4px 6px;
+    display: inline-block;
     white-space: nowrap;
+    color: #aaa;
+    font-size: 0.95em;
+    padding: 4px 8px;
+    text-decoration: none;
   }
 
   .content {
