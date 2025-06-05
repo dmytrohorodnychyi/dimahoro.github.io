@@ -260,28 +260,28 @@ p {
   }
 
   .sidebar-footer {
-  flex: 1;
-  padding: 6px;
-  font-size: 0.7em;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  white-space: nowrap;
-  overflow: hidden;
-}
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    background-color: #1e1e2f;
+  }
 
-.sidebar-footer .webring {
-  display: flex;
-  gap: 6px;
-  overflow-x: auto;
-}
+  .sidebar-footer .webring {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
 
-.sidebar-footer .webring a {
-  pointer-events: auto;
-  z-index: 2;
-}
-
+  .sidebar-footer .webring a {
+    font-size: 0.9em;
+    color: #aaa;
+    padding: 4px 6px;
+    white-space: nowrap;
+  }
 
   .content {
     padding: 20px;
