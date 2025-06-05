@@ -259,6 +259,30 @@ p {
     font-size: 0.8em;
   }
 
+  .sidebar-footer {
+  flex: 1;
+  padding: 6px;
+  font-size: 0.7em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.sidebar-footer .webring {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+}
+
+.sidebar-footer .webring a {
+  pointer-events: auto;
+  z-index: 2;
+}
+
+
   .content {
     padding: 20px;
     margin-bottom: 70px; /* отступ, чтобы не перекрывалось меню */
