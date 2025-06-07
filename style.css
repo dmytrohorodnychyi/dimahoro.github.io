@@ -12,10 +12,6 @@ body {
   background-color: #f0f2f5;
 }
 
-footer {
-  text-align: center;
-}
-
 .webring {
   text-align: center;
 }
@@ -65,6 +61,16 @@ footer {
   padding: 40px;
   background-color: #f9f9f9;
   overflow-y: auto;
+}
+
+.content #main sub {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.65em;
+  background: #f9f9f9;
+  padding: 10em;
 }
 
 section {
