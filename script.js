@@ -21,3 +21,8 @@ function showAbout(sectionId, element) {
   element.classList.add('active');
 }
 
+function switchLanguage(lang) {
+  document.querySelectorAll('[data-en]').forEach(el => {
+    el.innerHTML = el.getAttribute(`data-${lang}`);
+  });
+}

@@ -11,11 +11,16 @@
 <body onload="showSection('main')">
   <div class="sidebar">
     <ul>
-      <li onclick="showSection('main')"><i class="fas fa-file-alt"></i><span>Main</span></li>
-      <li onclick="showSection('cv')"><i class="fas fa-file-alt"></i><span>My CV</span></li>
-      <li onclick="showSection('about')"><i class="fas fa-user"></i><span>About Me</span></li>
-      <li onclick="showSection('projects')"><i class="fas fa-code"></i><span>My Projects</span></li>
+      <li onclick="showSection('main')"><i class="fas fa-file-alt"></i><span data-en="Main" data-ru="Главная">Main</span></li>
+      <li onclick="showSection('cv')"><i class="fas fa-file-alt"></i><span data-en="My CV" data-ru="Резюме">My CV</span></li>
+      <li onclick="showSection('about')"><i class="fas fa-user"></i><span data-en="About Me" data-ru="Обо мне">About Me</span></li>
+      <li onclick="showSection('projects')"><i class="fas fa-code"></i><span data-en="My Projects" data-ru="Мои проекты">My Projects</span></li>
     </ul>
+
+    <div class="language-switcher">
+      <button onclick="switchLanguage('en')">EN</button>
+      <button onclick="switchLanguage('ru')">RU</button>
+    </div>
 
     <div class="sidebar-footer">
       <p class="aberwebring">
@@ -28,28 +33,42 @@
 
   <div class="content">
     <section id="main">
-      <h1>Greetings!</h1>
-      <p>Hello! My name is Dima and I am a first year software engineer student at Aberystwyth Univeristy!
+      <h1 data-en="Greeting!" data-ru="Добро пожаловать!">Greetings!</h1>
+      <p 
+        data-en="Hello! My name is Dima and I am a first year software engineer student at Aberystwyth Univeristy!
+        On this website you can find information about me, my hobbies, my CV as well as contact details!"
+        data-ru="Здравствуйте! Меня зовут Дима и я студент первого курса 'Компьютерная Инженерия' университета Абериствут!
+        На этом сайте Вы сможете найти информацию обо мне, моих хобби, моё резюме, а также контактную информацию!">
+        Hello! My name is Dima and I am a first year software engineer student at Aberystwyth Univeristy!
         On this website you can find information about me, my hobbies, my CV as well as contact details!
       </p>
-      <sub>This site is under active development, so gradually there will be new sections,
-        topics, information, and maybe even a change of style!
-      </sub>
     </section>
 
     <section id="cv" class="cv-section">
   <div class="cv-header">
     <div class="cv-name">
-      <h1>Dmytro Horodnychyi</h1>
+      <h1 data-en="Dmytro Horodnychyi" data-ru="Дмитрий Городничий">Dmytro Horodnychyi</h1>
     </div>
   </div>
 
-  <h2>Contact Information</h2>
+  <h2 data-en="Contact Information" data-ru="Контактная информация">Contact Information</h2>
   <p><strong>Email:</strong> <a href="mailto:dih19@aber.ac.uk">dih19@aber.ac.uk</a></p>
   <p><strong>Github:</strong> <a href="https://github.com/dmytrohorodnychyi">dimahoro</a></p>
   
-  <h2>Professional Summary</h2>
-  <p>
+  <h2 data-en="Professional Summary" data-ru="О себе">Professional Summary</h2>
+  <p
+  data-en="Highly motivated and adaptable Software Engineering undergraduate student with a strong foundation in programming, computational theory and information security. 
+    Proven ability to thrive in fast-paced, collaborative environments through diverse roles in interpretation, social work, and youth advocacy. 
+    Skilled in cross-cultural communication, with experience supporting refugee communities and organising public events. 
+    Have technical basic skills in Python, Java and C, with hands-on experience using LaTeX and Linux. 
+    A passionate communicator and creative thinker, combining analytical mindset with musical talent and leadership potential."
+  data-ru="Высокомотивированный и адаптируемый студент бакалавриата по специальности 'Компьютерная инженерия' с сильными знаниями
+    в области программирования, компьютерной инфраструктуры и информационной безопасности.
+    Всегда доказываю свою способность успешно работать в быстро меняющихся условиях сотрудничества, благодаря разнообразным способностям в областях
+    переводов, социальной работы и защиты прав молодёжы.
+    Обладаю навыками межкультурной коммуникации, имею опыт поддержки сообществ беженцев в организации общественных мероприятий.
+    Владею базовыми техническими навыками на ЯП Python, Java, и С, а так же имею практический опыт работы с LaTeX и Linux.
+    Великолепный коммуникатор и креативный мыслитель, сочетающий аналитический склад ума с музыкальным талантом и лидерским потенциалом.">
     Highly motivated and adaptable Software Engineering undergraduate student with a strong foundation in programming, computational theory and information security. 
     Proven ability to thrive in fast-paced, collaborative environments through diverse roles in interpretation, social work, and youth advocacy. 
     Skilled in cross-cultural communication, with experience supporting refugee communities and organising public events. 
@@ -57,125 +76,284 @@
     A passionate communicator and creative thinker, combining analytical mindset with musical talent and leadership potential.
   </p>
 
-  <h2>Education</h2>
+  <h2 data-en="Education" data-ru="Образование">Education</h2>
 <div class="cv-block">
 
   <div class="education-entry">
     <div class="education-header">
-      <span><strong>Aberystwyth University</strong> – BEng, Software Engineering</span>
-      <span class="education-date">Sept 2024 – May 2028</span>
+      <span 
+      data-en="Aberystwyth University - BEng, Software Enginerring"
+      data-ru="Университет Абериствута - Бакалавр-инженер, Компьюетрная Инженерия">
+        <strong>Aberystwyth University</strong> – BEng, Software Engineering
+      </span>
+      <span class="education-date"
+      data-en="Sept 2024 - May 2028"
+      data-ru="Сентябрь 2024 - Май 2028">
+        Sept 2024 – May 2028
+      </span>
     </div>
     <ul>
-      <li>Predicted grade: 1st Class</li>
-      <li><strong>Coursework:</strong> Programming, Computational Theory, Information Security, Computer Infrastructure</li>
+      <li
+      data-en="Predicted grade: 1st Class"
+      data-ru="Предполагаемая оценка: 1й Класс">
+        Predicted grade: 1st Class
+      </li>
+      <li
+      data-en="<strong>Coursework:</strong> Programming, Computational Theory, Information Security, Computer Infrastructure"
+      data-ru="<strong>Учебные модули:</strong> Программирование, Компьютерная Теория, Информационная Безопасность">
+        <strong>Coursework:</strong> Programming, Computational Theory, Information Security, Computer Infrastructure
+      </li>
     </ul>
   </div>
 
   <div class="education-entry">
     <div class="education-header">
-      <span><strong>Birmingham Royal Conservatoire</strong> – ATCL, Music Performance</span>
-      <span class="education-date">Nov 2022 – Aug 2024</span>
+      <span
+      data-en="<strong>Birmingham Royal Conservatoire</strong> - ATCL, Music Performance"
+      data-ru="<strong>Бирмингемская Королевская Консерватория</strong> - ATCL, Музыкальное Выступление">
+        <strong>Birmingham Royal Conservatoire</strong> – ATCL, Music Performance
+      </span>
+      <span class="education-date"
+      data-en="Nov 2022 - Aug 2024"
+      data-ru="Ноябрь 2022 - Август 2024">
+        Nov 2022 – Aug 2024
+      </span>
     </div>
     <ul>
-      <li>Grade: High Pass</li>
-      <li><strong>Diploma:</strong> Level 4 in Music Performance</li>
+      <li
+      data-en="Grade: High Pass"
+      data-ru="Оценка: Пройдено">
+        Grade: High Pass
+      </li>
+      <li
+      data-en="<strong>Diploma</strong> Level 4 in Music Performance"
+      data-ru="<strong>Диплом:</strong> 4го уровня в Музыкальном Выступлении">
+        <strong>Diploma:</strong> Level 4 in Music Performance
+      </li>
     </ul>
   </div>
 
   <div class="education-entry">
     <div class="education-header">
-      <span><strong>The De Montfort School</strong> – A-levels</span>
-      <span class="education-date">Sept 2022 – June 2024</span>
+      <span
+      data-en="<strong>The De Montfort School</strong> - A-levels"
+      data-ru="<strong>Школа Де Монтфорда</strong> - Старшая школа">
+        <strong>The De Montfort School</strong> – A-levels
+      </span>
+      <span class="education-date"
+      data-en="Sept 2022 - June 2024"
+      data-ru="Сентябрь 2022 - Июнь 2024">
+        Sept 2022 – June 2024
+      </span>
     </div>
     <ul>
-      <li><strong>Grades:</strong> Music – A, Maths – B, English – C</li>
+      <li
+      data-en="<strong>Grades:</strong> Music - A, Maths - B, English - C"
+      data-ru="<strong>Оценки:</strong> Музыка - А, Математика - В, Английский - С">
+        <strong>Grades:</strong> Music – A, Maths – B, English – C
+      </li>
     </ul>
   </div>
 
 </div>
 
 
-  <h2>Experience</h2>
+  <h2
+  data-en="Experience"
+  data-ru="Рабочий Опыт">
+    Experience
+  </h2>
 <div class="cv-block">
 
   <div class="experience-entry">
     <div class="experience-header">
-      <span><strong>WORD360</strong> – Interpreter</span>
-      <span class="experience-date">Apr 2025 – Present | England, UK</span>
+      <span
+      data-en="<strong>WORD360</strong> - Interpreter"
+      data-ru="<strong>WORD360</strong> - Переводчик">
+        <strong>WORD360</strong> – Interpreter
+      </span>
+      <span class="experience-date"
+      data-en="Apr 2025 - Present | England, UK"
+      data-ru="Апрель 2025 - н.в. | Англия, Великобритания">
+        Apr 2025 – Present | England, UK
+      </span>
     </div>
     <ul>
-      <li>Providing a confidential and anonymous interpreting service</li>
-      <li>Mastered the ability to deal with emergency situations</li>
-      <li>Further improved my soft skills</li>
+      <li
+      data-en="Providing a confidential and anonymous interpreting service"
+      data-ru="Предоставление конфидециального и анонимного сервиса переводов">
+        Providing a confidential and anonymous interpreting service
+      </li>
+      <li
+      data-en="Mastered the ability to deal with emergency situations"
+      data-ru="Овладел умением решения черезвычайных ситуаций">
+        Mastered the ability to deal with emergency situations
+      </li>
+      <li
+      data-en="Further improved my soft skills"
+      data-ru="Более усовершенствовал мои социальные навыки">
+        Further improved my soft skills
+      </li>
     </ul>
   </div>
 
   <div class="experience-entry">
     <div class="experience-header">
-      <span><strong>Buttle UK</strong> – Youth Advisory Panel Representative</span>
-      <span class="experience-date">Jul 2024 – Present | England, UK</span>
+      <span
+      data-en="<strong>Buttle UK</strong> - Youth Advisory Panel Representative"
+      data-ru="<strong>Buttle UK</strong> - Представитель Содружества по Советам Молодёжы">
+        <strong>Buttle UK</strong> – Youth Advisory Panel Representative
+      </span>
+      <span class="experience-date"
+      data-en="Jul 2024 - Present | England, UK"
+      data-ru="Июль 2024 - н.в. | Англия, Великобритания">
+        Jul 2024 – Present | England, UK
+      </span>
     </div>
     <ul>
-      <li>Coordinated teamwork, improved advertising, gained soft skills</li>
+      <li
+      data-en="Coordinate teamwork, improved advertising, gained soft skills"
+      data-ru="Координированная командная работа, улучшил рекламную кампанию, получил базовые социальные навыки для работы в компании">
+        Coordinated teamwork, improved advertising, gained soft skills
+      </li>
     </ul>
   </div>
 
   <div class="experience-entry">
     <div class="experience-header">
-      <span><strong>Evesham Vale Welcome Refugees</strong> – Volunteer</span>
-      <span class="experience-date">Apr 2024 – Present | England, UK</span>
+      <span
+      data-en="<strong>Evesham Vale Welcome Refugees</strong> - Volunteer"
+      data-ru="<strong>Evesham Vale Welcome Refugees</strong> - Волонтёр">
+        <strong>Evesham Vale Welcome Refugees</strong> – Volunteer
+      </span>
+      <span class="experience-date"
+      data-en="Apr 2024 - Present | England, UK"
+      data-ru="Апрель 2024 - н.в. | Англия, Великобритания">
+        Apr 2024 – Present | England, UK
+      </span>
     </div>
     <ul>
-      <li>Organised a fundraising concert with local musicians</li>
+      <li
+      data-en="Organised a fundraising concert with local musicians"
+      data-ru="Организовал концерт с местными музыкантами для сбора фин.средств в поддержку нуждающихся">
+        Organised a fundraising concert with local musicians
+      </li>
     </ul>
   </div>
 
   <div class="experience-entry">
     <div class="experience-header">
-      <span><strong>NieCodzienna Restaurant</strong> – Chef Assistant / Grill Chef</span>
-      <span class="experience-date">Jun 2022 – Sep 2022 | Warsaw, Poland</span>
+      <span
+      data-en="<strong>NieCodzienna Restaurant</strong> - Chef Assistant / Grill Chef"
+      data-ru="<strong>Ресторан NieCodzienna</strong> - Помощник Шефа / Шеф по грилю">
+        <strong>NieCodzienna Restaurant</strong> – Chef Assistant / Grill Chef
+      </span>
+      <span class="experience-date"
+      data-en="Jun 2022 - Sep 2022 | Warsaw, Poland"
+      data-ru="Июнь 2022 - Сентябрь 2022 | Варшава, Польша">
+        Jun 2022 – Sep 2022 | Warsaw, Poland
+      </span>
     </div>
     <ul>
-      <li>Improved grill menu, boosted customer flow</li>
-      <li>Managed bar register, worked under pressure</li>
+      <li
+      data-en="Improved grill menu, boosted customer flow"
+      data-ru="Улучшил меню для гриля, тем самым увеличил оборот гостей">
+        Improved grill menu, boosted customer flow
+      </li>
+      <li
+      data-en="Managed bar register, worked under pressure"
+      data-ru="Нёс отвественность за кассу бара, работал под напряжением">
+        Managed bar register, worked under pressure
+      </li>
     </ul>
   </div>
 
   <div class="experience-entry">
     <div class="experience-header">
-      <span><strong>Star of Hope</strong> – Social Worker</span>
-      <span class="experience-date">Apr 2022 – May 2022 | Karrjo, Sweden</span>
+      <span
+      data-en="<strong>Start of Hope</strong> - Social Worker"
+      data-ru="<strong>Звезда Надежды</strong> - Социальный Работник">
+        <strong>Star of Hope</strong> – Social Worker
+      </span>
+      <span class="experience-date"
+      data-en="Apr 2022 - May 2022 | Karrjo, Sweden"
+      data-ru="Апрель 2022 - Май 2022 | Кэрршо, Швеция">
+        Apr 2022 – May 2022 | Karrjo, Sweden
+      </span>
     </div>
     <ul>
-      <li>Organised concerts for Ukrainian refugees</li>
-      <li>Acted as interpreter between refugees and authorities</li>
+      <li
+      data-en="Organised concerts for Ukrainian refugees"
+      data-ru="Организовывал концерты для беженцев из Украины">
+        Organised concerts for Ukrainian refugees
+      </li>
+      <li
+      data-en="Acted as interpreter between refugees and authorities"
+      data-ru="Работал как переводчик между беженцами и местными представителями властей Швеции">
+        Acted as interpreter between refugees and authorities
+      </li>
     </ul>
   </div>
 
 </div>
 
 
-  <h2>Additional Skills</h2>
+  <h2
+  data-en="Additional Skills"
+  data-ru="Дополнительные навыки">
+    Additional Skills
+  </h2>
   <ul>
-    <li><strong>IT Skills:</strong> MS Office, LaTeX, Linux OS, Windows OS, Python, Java, C</li>
-    <li><strong>Creative Skills:</strong> Music Performance (Piano)</li>
+    <li
+    data-en="<strong>IT Skills:</strong> MS Office, LaTeX, Linux OS, Windows OS, Python, Java, C"
+    data-ru="<strong>IT Hавыки:</strong> MS Office, LaTeX, Linux OS, Windows OS, Python, Java, C">
+      <strong>IT Skills:</strong> MS Office, LaTeX, Linux OS, Windows OS, Python, Java, C
+    </li>
+    <li
+    data-en="<strong>Creative Skills:</strong> Music Performance (Piano)"
+    data-ru="<strong>Креативные Навыки:</strong> Музыкальное Выступление (Фортепиано)">
+      <strong>Creative Skills:</strong> Music Performance (Piano)
+    </li>
   </ul>
 </section>
 
 
     <section id="about">
-  <h1>About Me</h1>
+  <h1
+  data-en="About Me"
+  data-ru="Обо Mне">
+    About Me
+  </h1>
 
   <div class="about-menu">
     <ul>
-      <li onclick="showAbout('uni', this)">My life at Uni</li>
-      <li onclick="showAbout('music', this)">My musical career</li>
+      <li onclick="showAbout('uni', this)"
+      data-en="My life at Uni"
+      data-ru="Моя жизнь в университете">
+        My life at Uni
+      </li>
+      <li onclick="showAbout('music', this)"
+      data-en="My musical career"
+      data-ru="Моя музыкальная карьера">
+        My musical career
+      </li>
     </ul>
   </div>
 
   <div class="about-content">
     <div id="about-uni" class="about-section">
-      <p>My life at university is not as exciting as you might assume.
+      <p
+      data-en="My life at university is not as exciting as you might assume.
+        I spent most of the time in my flat learning programming and the material taught by the professors in my course.
+        Gladly, I was also able to become the accompanist for the AberMADS choir, and I spent
+        a lot of time in rehearsals helping them with my piano playing to learn
+        the repertoire for their concerts."
+      data-ru="Моя жизнь в университете не так интересна, как можно было бы предположить.
+               Большую часть своего времени я проводил в своей квартире, изучая программирование и материал,
+               который преподавали профессора на моем курсе.
+               К счастью, мне также удалось стать аккомпаниатором хора AberMADS, и я проводил много времени
+               на репетициях, помогая им своей игрой на фортепиано, чтобы они могли выучить репертуар для их концертов.">
+        My life at university is not as exciting as you might assume.
         I spent most of the time in my flat learning programming and the material taught by the professors in my course.
         Gladly, I was also able to become the accompanist for the AberMADS choir, and I spent
         a lot of time in rehearsals helping them with my piano playing to learn
@@ -183,13 +361,40 @@
       </p>
     </div>
     <div id="about-music" class="about-section">
-      <p>I developed a love for music at a <em>strange</em> age.
+      <p
+      data-en="I developed a love for music at a <em>strange</em> age.
          What I mean by <em>strange</em> is this: <strong>It was too late to enter a
           junior music school, but too early to enter a music academy (this was in Ukraine,
           and the terms 'junior music school' and 'music academy' are completely different
           from those used in the UK).
-         </strong></p>
-      <p>
+         </strong>"
+      data-ru="Любовь к музыке у меня появилась в <em>странном</em> возрасте.
+               Под <em>странным</em> я имею ввиду следующее: <strong>Было слишком поздно поступать в
+               младшую музыкальную школу, но слишком рано - в музыкальную академию (дело происходило в Украине).</strong>">
+        I developed a love for music at a <em>strange</em> age.
+         What I mean by <em>strange</em> is this: <strong>It was too late to enter a
+          junior music school, but too early to enter a music academy (this was in Ukraine,
+          and the terms 'junior music school' and 'music academy' are completely different
+          from those used in the UK).
+         </strong>
+        </p>
+      <p
+      data-en="Anyway, here's a bit of context (also - memories) for you: <em>One day, when I was late at school after lessons,
+          I was walking past rooms I had never been in before and did not know what was in them.
+          Suddenly, I heard a melody played on the piano. I had to stop and listen to see which room the sound was coming from.
+          While I was figuring it out, I had to listen to a certain composition played on the piano.
+          I liked the sound and the melody very much, so I headed home in a hurry.
+          When I got home, I told my mum that I wanted to learn to play the piano.
+          Of course, she was shocked (as she would never assume that one day I will tell her this), but she did not refuse and helped me...
+          Two weeks later, on my birthday, I received a gorgeous piano as a present (it was completely out of tune, but I did not care at first).</em>"
+      data-ru="В любом случае, вот вам немного контекста (и по совместительству - воспоминаний): &quot;<em>Однажды, когда я задержался в школе после уроков,
+        я проходил мимо кабинетов, в которых никогда раньше не был и не имел представления, что в них находиться.
+        Однако, неожиданно, я услышал мелодию, сыгранную на фортепиано. Моя заинтересованность остановила меня и заставила прислушаться, чтобы понять, из какого именно
+        кабинета доносился звук. Пока я пытался в этом разобраться, на фоне была сыграна определённая короткая композиция, на том же фортепиано. После, придя домой, я гордо заявил своей маме,
+        что хочу научится играть на фортепиано.
+        Конечно, она была шоркирована (ведь она никогда бы не подумала, что однажды я скажу ей об этом), но, она не отказала и помогла мне...
+        И уже через 2 недели, на свой день рождения, я получил в подарок великолепное фортепаино (оно было совершенно не настроено, но меня это поначалу не волновало).
+      </em>&quot;">
         Anyway, here's a bit of context (also - memories) for you: "<em>One day, when I was late at school after lessons,
           I was walking past rooms I had never been in before and did not know what was in them.
           Suddenly, I heard a melody played on the piano. I had to stop and listen to see which room the sound was coming from.
@@ -199,23 +404,62 @@
           Of course, she was shocked (as she would never assume that one day I will tell her this), but she did not refuse and helped me...
           Two weeks later, on my birthday, I received a gorgeous piano as a present (it was completely out of tune, but I did not care at first).</em>"
       </p>
-      <p>
+      <p
+      data-en="I won't go into details about how I studied at junior music school (yes, I was able to get into a junior music school) - 
+        I'll just say that I was a laureate of international competitions and prizes and received the maximum scholarship for my achievements😁
+        <sub>(yes, I bragged a little, so what now?)</sub>"
+      data-ru="Я не буду вдаваться в глубокие подробности о том, как я учился в детской музыкальной школе (да, у меня получилось поступить в ДМШ) -
+      я просто скажу что я был лауреатом международных премий и соревнований и получал максимальную стипендию за мои заслуги😁
+      <sub>(да, я похвастался немного, и что теперь?)</sub>">
         I won't go into details about how I studied at junior music school (yes, I was able to get into a junior music school) - 
         I'll just say that I was a laureate of international competitions and prizes and received the maximum scholarship for my achievements😁
         <sub>(yes, I bragged a little, so what now?)</sub>
       </p>
-      <p>
+      <p
+      data-en="After successfully completing my course at junior music school, I decided to continue my success and enrol in a music academy...
+        Unfortunately, things did not go as smoothly as I had hoped, and I failed to get into the academy.
+        The problem wasn't my grades or my success - the problem was the professor who wanted to be my mentor.<br />
+        Again, I won't go into too much detail: I'll just say that the new teacher at the academy was very mean, rude,
+        and did not fit my personality at all (and in music, similarity in personality to your teacher or mentor is very important)."
+      data-ru="Успешно окончив обучение в ДМШ, я решил продолжить свой успех и поступить в музыкальную академию...
+               К сожалению, всё пошло не так гладко, как я ожидал и надеялся, и я не смог поступить в академию.
+               Главное: проблема была не в оценках или моих успехах - проблема была в профессоре, который хотел стать мои наставником.<br />
+               Опять же, я не буду вдаваться в глубокие подробности: Скажу только, что новый преподаватель в академии был
+               очень злым, грубым, и совершенно не подходил мне по характеру (а в музыке сходство характера с учителем или наставником очень важно).">
         After successfully completing my course at junior music school, I decided to continue my success and enrol in a music academy...
         Unfortunately, things did not go as smoothly as I had hoped, and I failed to get into the academy.
         The problem wasn't my grades or my success - the problem was the professor who wanted to be my mentor.<br />
         Again, I won't go into too much detail: I'll just say that the new teacher at the academy was very mean, rude,
         and did not fit my personality at all (and in music, similarity in personality to your teacher or mentor is very important).
       </p>
-      <p>
+      <p
+      data-en="After that I took a long break of 2 years from all music.
+        I did not play, I did not perform, I did not teach - absolutely nothing."
+      data-ru="После этого, я взял долгую паузу в 2 года от музыки.
+      Я не выступал, я не играл для себя, я никого не учил музыке - абсолютно ничего.">
         After that I took a long break of 2 years from all music.
         I did not play, I did not perform, I did not teach - absolutely nothing.
       </p>
-      <p>
+      <p
+      data-en="Soon, due to certain circumstances (I wonder what kind of circumstances...🤔), I had to leave my country
+        prematurely in 2022 and seek asylum in the UK. And here, after a long 2 years of downtime, the 'resurrection'
+        of my musical talent began again.<br /> During my studies at Sixth Form, my teacher noticed my talent and suggested I apply
+        to study at the Birmingham Royal Conservatoire. And for personal interest, I decided to do so. Three weeks later I was invited to
+        an audition, and immediately after the audition I was accepted as a student of Junior Conservatoire.<br />
+        Also, I met many people who worked with different charities and when I told them about my enrolment at Birmingham Royal Conservatoire,
+        they instantly asked me to perform at their fund-raising events and concerts in support of British people and Ukrainian refugees.<br />
+        After 2 years of study I successfully completed my studies at the Conservatoire and received my diploma - my happiness was boundless
+        as I was able to fulfill my dream: to get a musical education.<br />Alongside this, I have been performing seasonal concerts for 3 years
+        for various charities and volunteer organisations to support British people and Ukrainian refugees in need."
+      data-ru="Вскоре, в силу определённых обстоятельств (интересно, что за обстоятельства...🤔), мне пришлось покинуть свою страну досрочно
+      в 2022 году и искать убежища в Великобритании. И вот, после долгих 2 лет простоя, &quot;воскрешение&quot; моего музыкального таланта началось снова.<br />
+      Во время учебы в старшей школе в Англии, мой учитель заметил мой музыкальный талант и предложил мне подать заявление на обучение в 
+      Бирмингемскую Королевскую Консерваторию. Из личного интереса я решил так и поступить. Через три недели меня пригласили на прослушивание, и сразу после
+      него я был принят в число студентов младших курсов консерватории.<br />Также я познакомился с многими людьми, которые работали с различными благотворительными организациями, и когда я
+      рассказал им о своем поступлении в консерваторию, они сразу же попросили мены выступить на их концертах по сбору средств в поддержку жителей Великобритании и
+      беженцев из Украины.<br />После 2 лет обучения, я успешно окончил консерваторию и получил диплом - моё счастье было безграничным, ведь я смог осуществить свою
+      давнюю мечту - получить музыкальное образование.<br />Помимо этого, в течении последних 3 лет, я выступал с сезонными концертами для различных благотворительных
+      и волонтёрских организцаий в поддержку нуждающихся британцев и украинских беженцев.">
         Soon, due to certain circumstances (I wonder what kind of circumstances...🤔), I had to leave my country
         prematurely in 2022 and seek asylum in the UK. And here, after a long 2 years of downtime, the 'resurrection'
         of my musical talent began again.<br /> During my studies at Sixth Form, my teacher noticed my talent and suggested I apply
@@ -233,9 +477,27 @@
 
 
     <section id="projects">
-  <h1>My projects</h1>
+  <h1
+  data-en="My projects"
+  data-ru="Мои проекты">
+    My projects
+  </h1>
       <div class="projects-about">
-        <p>
+        <p
+        data-en="This website can be considered my first (and somewhat complete) project. Before this,
+          I started several different pet projects, but I did not finish any of them. Maybe it was due to
+          my laziness, or maybe other circumstances -- who knows? <br />Whenever I start a project,
+          I always fear I don't have enough knowledge to finish it, and because of that,
+          I can easily abandon it and forget it ever existed. <br /> Hopefully, after completing this website,
+          I'll feel more confident and start working on other projects for my portfolio - otherwise,
+          I'll struggle to find a job later on😶‍🌫️"
+        data-ru="Этот сайт можно считать моим первым (и в некоторой степени завершённым) проектом. До этого,
+        я начинал несколько различных личных проектов для развития и практики, но ни один из них не закончил.
+        Может быть, это было связано с моей ленью, а может быть и с другими обстоятельствами - кто знает?<br />
+        Когда бы я ни начинал проект, я всегда боюсь, что у меня не хватит знаний, чтобы закончить его, и из-за этого
+        я могу легко бросить его и забыть о его существовании.<br />Надеюсь, что после завершения работы над этим сайтом,
+        я почувствую себя увереннее и начну работать и над другими проектами для своего портфолио - в противном случае, мне будет сложно
+        найти работы в дальнейшем😶‍🌫️">
           This website can be considered my first (and somewhat complete) project. Before this,
           I started several different pet projects, but I did not finish any of them. Maybe it was due to
           my laziness, or maybe other circumstances -- who knows? <br />Whenever I start a project,
