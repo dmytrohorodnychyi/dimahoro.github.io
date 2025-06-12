@@ -16,6 +16,14 @@ body {
   text-align: center;
 }
 
+a:link {
+  color: lightgreen;
+}
+
+a:visited {
+  color: lightpink;
+}
+
 .sidebar {
   width: 60px;
   background-color: #1e1e2f;
