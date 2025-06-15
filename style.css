@@ -16,11 +16,11 @@ body {
   text-align: center;
 }
 
-a:link {
+.aberwebring a:link {
   color: lightgreen;
 }
 
-a:visited {
+.aberwebring a:visited {
   color: lightpink;
 }
 
